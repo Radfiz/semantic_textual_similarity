@@ -1,0 +1,16 @@
+# Параметры предобработки текста
+text_cleaning:
+  lowercase: true               # Приводить текст к нижнему регистру
+  remove_punctuation: true      # Удалять пунктуацию
+  remove_numbers: false         # Удалять числа
+  remove_extra_spaces: true     # Удалять лишние пробелы
+
+tokenization:
+  split_on_whitespace: true     # Разделять по пробелам
+  use_lemmatization: false      # Использовать лемматизацию
+  use_stemming: false           # Использовать стемминг
+
+# Параметры для n-gram фраз
+phrases:
+  max_ngram_length: 3           # Максимальная длина фразы (1-3 слова)
+  min_word_length: 2            # Минимальная длина слова
