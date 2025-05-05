@@ -113,8 +113,15 @@
 ├── README.md
 ├── requirements.txt
 ├── main_notebook.ipynb       # Основной исследовательский ноутбук
+├── models/                   # Модели
+├── results/                  # Результаты
+├── logs/                     # # Директория для логов
 ├── configs/                  # Конфиги вынесены отдельно
-│   └── preprocessing.yaml    # Параметры обработки
+│   ├── preprocessing.yaml    # Параметры предобработки текста
+│   ├── model.yaml            # Параметры моделей Word2Vec TF-IDF
+│   ├── search.yaml           # Параметры семантического поиска
+│   ├── evaluation.yaml       # Параметры оценки модели
+│   └── paths.yaml            # Пути к данным и моделям
 ├── data/                     
 │   ├── raw/                  # Сырые данные (CSV, JSON)
 │   ├── processed/            # Очищенные данные
