@@ -34,53 +34,56 @@ Project Organization
 ------------
 ```
 semantic_textual_similarity/
-├── LICENSE     
-├── README.md                  
-├── Makefile                     # Makefile with commands like `make data` or `make train`                   
-├── configs                      # Config files (models and training hyperparameters)
-│   └── model1.yaml              
+
+semantic_textual_similarity/       # Проект семантического текстового сходства
+├── LICENSE                       # Лицензия
+├── README.md                     # Основная документация проекта                  
+├── Makefile                      # Makefile с командами типа `make data` или `make train`                   
+├── configs                       # Конфигурационные файлы
+│   └── model1.yaml               # Параметры моделей и обучения              
 │
-├── data                         
-│   ├── external                 # Data from third party sources.
-│   ├── interim                  # Intermediate data that has been transformed.
-│   ├── processed                # The final, canonical data sets for modeling.
-│   └── raw                      # The original, immutable data dump.
+├── data                          # Данные
+│   ├── external                  # Внешние данные (из сторонних источников)
+│   ├── interim                   # Промежуточные данные после преобразований
+│   ├── processed                 # Финальные готовые наборы данных для моделирования
+│   └── raw                       # Исходные "сырые" данные (неизменяемые)
 │
-├── docs                         # Project documentation.
+├── docs                          # Документация проекта
 │
-├── models                       # Trained and serialized models.
+├── models                        # Обученные и сериализованные модели
 │
-├── notebooks                    # Jupyter notebooks.
+├── notebooks                     # Jupyter-ноутбуки
 │
-├── references                   # Data dictionaries, manuals, and all other explanatory materials.
+├── references                    # Справочные материалы
+│                                # (словари данных, мануалы, пояснительные материалы)
 │
-├── reports                      # Generated analysis as HTML, PDF, LaTeX, etc.
-│   └── figures                  # Generated graphics and figures to be used in reporting.
+├── reports                       # Результаты аналитики
+│   └── figures                   # Сгенерированные графики и изображения для отчётов
 │
-├── requirements.txt             # The requirements file for reproducing the analysis environment.
-└── src                          # Source code for use in this project.
-    ├── __init__.py              # Makes src a Python module.
+├── requirements.txt              # Зависимости (для воссоздания окружения)
+└── src                           # Исходный код проекта
+    ├── __init__.py               # Делает src Python-модулем
     │
-    ├── data                     # Data engineering scripts.
-    │   ├── build_features.py    
-    │   ├── cleaning.py          
-    │   ├── ingestion.py         
-    │   ├── labeling.py          
-    │   ├── splitting.py         
-    │   └── validation.py        
+    ├── data                      # Скрипты для работы с данными
+    │   ├── build_features.py     # Построение признаков
+    │   ├── cleaning.py           # Очистка данных
+    │   ├── ingestion.py          # Загрузка данных
+    │   ├── labeling.py           # Разметка данных
+    │   ├── splitting.py          # Разделение данных
+    │   └── validation.py         # Валидация данных
     │
-    ├── models                   # ML model engineering (a folder for each model).
-    │   └── model1      
-    │       ├── dataloader.py    
-    │       ├── hyperparameters_tuning.py 
-    │       ├── model.py         
-    │       ├── predict.py       
-    │       ├── preprocessing.py 
-    │       └── train.py         
+    ├── models                    # Модели машинного обучения
+    │   └── model1                # Модель 1
+    │       ├── dataloader.py     # Загрузчик данных
+    │       ├── hyperparameters_tuning.py  # Подбор гиперпараметров
+    │       ├── model.py          # Архитектура модели
+    │       ├── predict.py        # Предсказания
+    │       ├── preprocessing.py  # Предобработка
+    │       └── train.py          # Обучение модели
     │
-    └── visualization        # Scripts to create exploratory and results oriented visualizations.
-        ├── evaluation.py        
-        └── exploration.py       
+    └── visualization             # Визуализация
+        ├── evaluation.py         # Оценка результатов
+        └── exploration.py        # Разведочный анализ
 ```
 
 
