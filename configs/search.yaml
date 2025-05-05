@@ -1,0 +1,15 @@
+# Параметры семантического поиска
+similarity:
+  threshold: 0.65               # Порог схожести
+  metric: cosine                # Метрика схожести (cosine/euclidean)
+  expand_query: true            # Расширять запрос
+  expansion_top_n: 3            # Количество слов для расширения
+
+context:
+  window_chars: 50              # Размер окна контекста (в символах)
+  weight: 0.7                   # Вес контекста в финальной оценке
+
+results:
+  top_k: 5                      # Количество возвращаемых результатов
+  remove_duplicates: true       # Удалять дубликаты
+  sort_by: score                # Сортировка по (score/position)
