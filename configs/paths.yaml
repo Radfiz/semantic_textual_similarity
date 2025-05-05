@@ -1,0 +1,14 @@
+# Пути к данным и моделям
+data:
+  raw: data/raw                 # Сырые данные
+  processed: data/processed     # Обработанные данные
+  indexed: data/indexed         # Индексированные данные
+
+models:
+  tfidf: models/tfidf.pkl       # TF-IDF модель
+  word2vec: models/word2vec.bin # Word2Vec модель
+  sentence: models/sentence     # Sentence Transformer
+
+results:
+  evaluations: results/eval     # Результаты оценок
+  searches: results/searches    # Результаты поиска
