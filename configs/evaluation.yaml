@@ -1,0 +1,15 @@
+# Параметры оценки модели
+benchmarks:
+  - name: RuSTSBenchmarkSTS
+    languages: [rus]
+    split: test
+
+metrics:
+  - cosine_similarity
+  - precision_at_k
+  - recall_at_k
+
+output:
+  folder: results               # Папка для сохранения результатов
+  save_embeddings: false        # Сохранять эмбеддинги
+  verbose: true                 # Подробный вывод
